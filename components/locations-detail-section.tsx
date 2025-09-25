@@ -60,7 +60,7 @@ export default function LocationsDetailSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-[#7f0e0e] mb-4 font-serif">Nuestras Ubicaciones</h1>
-          <p className="text-xl text-[#d48b71] font-mono">Encuentra el salón más cercano a ti</p>
+          <p className="text-[26px] text-[#d48b71] font-mono">Encuentra el salón más cercano a ti</p>
         </div>
 
         <div className="space-y-12">

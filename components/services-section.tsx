@@ -124,7 +124,7 @@ export default function ServicesSection() {
       <div className="container mx-auto px-2">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-[#7f0e0e] mb-4 font-serif">Nuestros Servicios</h1>
-          <p className="text-xl text-[#d48b71] font-mono">Descubre todos nuestros tratamientos de belleza</p>
+          <p className="text-[26px] text-[#d48b71] font-mono">Descubre todos nuestros tratamientos de belleza</p>
         </div>
 
         <div className="space-y-16">

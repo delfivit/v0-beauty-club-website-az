@@ -71,7 +71,7 @@ export default function LocationsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-[#7f0e0e] mb-4 font-butler">
             Estamos en Bilbao, Cádiz y Málaga
           </h2>
-          <p className="text-xl text-[#d48b71] font-quentin">pero nuestra esencia es la misma en cada lugar</p>
+          <p className="text-[26px] text-[#d48b71] font-quentin">pero nuestra esencia es la misma en cada lugar</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
