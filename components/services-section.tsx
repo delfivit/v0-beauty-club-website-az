@@ -150,8 +150,7 @@ export default function ServicesSection() {
               <div className="text-center">
                 {location.bookingScript ? (
                   <div className="space-y-4">
-                    <div dangerouslySetInnerHTML={{ __html: location.bookingScript }} className="booksy-widget" />
-                    <p className="text-sm text-[#d48b71]">Reserva directamente a través de Booksy</p>
+                    <div dangerouslySetInnerHTML={{ __html: location.bookingScript }} className="booksy-widget" />                
                   </div>
                 ) : (
                   <Link href={`/reserva#${key}`}>

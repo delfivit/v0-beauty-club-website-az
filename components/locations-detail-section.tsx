@@ -125,7 +125,6 @@ export default function LocationsDetailSection() {
                           dangerouslySetInnerHTML={{ __html: location.bookingScript }}
                           className="booksy-widget mb-2"
                         />
-                        <p className="text-sm text-[#d48b71] text-center">Reserva directamente a través de Booksy</p>
                       </div>
                     ) : (
                       <Link href={location.bookingUrl}>

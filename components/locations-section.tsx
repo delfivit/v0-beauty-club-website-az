@@ -113,7 +113,6 @@ export default function LocationsSection() {
                       dangerouslySetInnerHTML={{ __html: location.bookingScript }}
                       className="booksy-widget min-h-[50px]"
                     />
-                    <p className="text-sm text-[#d48b71] text-center">Reserva online con Booksy</p>
                   </div>
                 ) : (
                   <Link href={`tel:${location.phone.replace(/\s/g, "")}`}>
