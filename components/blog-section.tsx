@@ -26,11 +26,11 @@ const blogLinks = [
 
 export default function BlogSection() {
   return (
-    <section className="bg-[#fcf6f5] py-20">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#7f0e0e] mb-4">
-            Te contamos de las últimas tendencias
+          <h2 className="text-4xl md:text-5xl font-butler font-bold text-[#7f0e0e] mb-4">
+            Hechale un vistazo a las últimas tendencias
           </h2>
         </div>
 

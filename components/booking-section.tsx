@@ -14,8 +14,10 @@ const bookingData = [
     address: "C/ Máximo Aguirre 11 bis",
     phone: "660 25 25 23",
     hours: "Lun-Vie: 9:30-20:30, Sáb: 9:30-14:00",
-    bookingMethod: "phone",
-    description: "Llámanos directamente para reservar tu cita",
+    bookingMethod: "booksy",
+    bookingScript:
+      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100020&country=es&lang=es"></script>',
+    description: "Reserva online a través de Booksy",
   },
   {
     id: "cadiz",
@@ -43,29 +45,6 @@ const bookingData = [
   },
 ]
 
-const bookingSteps = [
-  {
-    step: 1,
-    title: "Elige tu ubicación",
-    description: "Selecciona el salón más cercano a ti",
-  },
-  {
-    step: 2,
-    title: "Selecciona tu servicio",
-    description: "Elige entre nuestros tratamientos disponibles",
-  },
-  {
-    step: 3,
-    title: "Escoge fecha y hora",
-    description: "Encuentra el horario que mejor se adapte a ti",
-  },
-  {
-    step: 4,
-    title: "Confirma tu cita",
-    description: "Recibe la confirmación y prepárate para tu momento",
-  },
-]
-
 export default function BookingSection() {
   useEffect(() => {
     // Load Booksy scripts dynamically
@@ -84,42 +63,16 @@ export default function BookingSection() {
     <section className="py-20">
       {/* Hero Section */}
       <div className="bg-[#7f0e0e] py-20">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-2 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-[#faaca2] mb-6 font-serif">Reserva tu Cita</h1>
-          <p className="text-xl text-[#ffe3dc] max-w-3xl mx-auto font-mono">
+          <p className="text-[25px] text-[#ffe3dc] max-w-3xl mx-auto font-mono">
             Tu momento para desconectar está a un clic de distancia
           </p>
         </div>
       </div>
-
-      {/* How to Book Section */}
-      <div className="bg-[#fcf6f5] py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-[#7f0e0e] mb-4 font-serif">¿Cómo reservar tu cita?</h2>
-            <p className="text-[#d48b71] text-lg">Proceso fácil y rápido en 4 simples pasos</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-            {bookingSteps.map((step, index) => (
-              <div key={step.step} className="text-center">
-                <div className="bg-[#7f0e0e] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                  {step.step}
-                </div>
-                <h3 className="text-lg font-semibold text-[#7f0e0e] mb-2">{step.title}</h3>
-                <p className="text-[#d48b71] text-sm">{step.description}</p>
-                {index < bookingSteps.length - 1 && (
-                  <ArrowRight className="w-6 h-6 text-[#faaca2] mx-auto mt-4 hidden md:block" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Booking Options */}
       <div className="bg-white py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-[#7f0e0e] mb-4 font-serif">Elige tu ubicación</h2>
           </div>
@@ -192,7 +145,7 @@ export default function BookingSection() {
 
       {/* Help Section */}
       <div className="bg-[#fcf6f5] py-20">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-2 text-center">
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-sm">
             <h2 className="text-2xl font-bold text-[#7f0e0e] mb-4 font-serif">¿Necesitas ayuda?</h2>
             <p className="text-[#d48b71] mb-6">

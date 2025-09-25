@@ -9,14 +9,16 @@ const locationsData = [
     name: "Bilbao",
     image: "/images/local-bilbao.jpg",
     address: "C/ Máximo Aguirre 11 bis",
-    phone: "660 25 25 23",
+    phone: "660 252 523",
     hours: {
       weekdays: "Lunes a Viernes: 9:30 - 20:30",
       saturday: "Sábado: 9:30 - 14:00",
       sunday: "Domingo: Cerrado",
     },
-    services: ["Manicura", "Pedicura", "Lifting de Pestañas", "Depilación", "Tratamientos Faciales"],
+    services: ["Manicura", "Pedicura", "Lifting de Pestañas", "Depilación"],
     bookingUrl: "/reserva#bilbao",
+    bookingScript:
+      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100020&country=es&lang=es"></script>',
   },
   {
     id: "cadiz",

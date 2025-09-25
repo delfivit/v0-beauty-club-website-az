@@ -1,11 +1,30 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import localFont from "next/font/local"
 import "./globals.css"
 
-const inter = Inter({
-  subsets: ["latin"],
+const outfit = localFont({
+  src: "../public/Outfit-SemiBold.ttf",
   variable: "--font-outfit",
+  display: "swap",
+})
+
+const butler = localFont({
+  src: "../public/Butler_Bold.otf",
+  variable: "--font-butler",
+  display: "swap",
+})
+
+const quentin = localFont({
+  src: "../public/Quentin.otf",
+  variable: "--font-quentin",
+  display: "swap",
+})
+
+const archeron = localFont({
+  src: "../public/Archeron Pro Stencil Bold.otf",
+  variable: "--font-archeron",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -18,7 +37,7 @@ export const metadata: Metadata = {
     description: "Salones de belleza en España. Servicios de manicura, pedicura y más.",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -27,15 +46,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`${inter.variable} antialiased`}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Butler:wght@300;400;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Quentin&display=swap" rel="stylesheet" />
-      </head>
+    <html
+      lang="es"
+      className={`${outfit.variable} ${butler.variable} ${quentin.variable} ${archeron.variable} antialiased`}
+    >
       <body className="min-h-screen bg-background font-sans antialiased">{children}</body>
     </html>
   )

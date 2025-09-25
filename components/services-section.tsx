@@ -5,10 +5,11 @@ import { Phone } from "lucide-react"
 const servicesData = {
   bilbao: {
     name: "Bilbao",
-    phone: "660 25 25 23",
-    bookingScript: null,
+    phone: "660 252 523",
+    bookingScript:
+      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100020&country=es&lang=es"></script>',
     services: [
-      { name: "BROW LAMINATION", price: "20€" },
+      { name: "Brow lamination", price: "20€" },
       { name: "Depilación de cejas", price: "10€" },
       { name: "Depilación de cejas + labio", price: "15€" },
       { name: "Depilación de cejas + tinte", price: "15€" },
@@ -72,7 +73,7 @@ const servicesData = {
       { name: "Lifting de Pestañas", price: "25,00€" },
       { name: "Depilación labio superior", price: "5,00€" },
       { name: "Depilación de cejas con cera", price: "6,00€" },
-      { name: "LIMPIEZA FACIAL CON HIDRATACIÓN", price: "25,99€" },
+      { name: "Limpieza facial con hidratación", price: "25,99€" },
     ],
   },
   malaga: {
@@ -120,7 +121,7 @@ const servicesData = {
 export default function ServicesSection() {
   return (
     <section className="py-20 bg-[#fcf6f5]">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-[#7f0e0e] mb-4 font-serif">Nuestros Servicios</h1>
           <p className="text-xl text-[#d48b71] font-mono">Descubre todos nuestros tratamientos de belleza</p>
@@ -173,7 +174,7 @@ export default function ServicesSection() {
                 variant="outline"
                 className="border-[#7f0e0e] text-[#7f0e0e] hover:bg-[#7f0e0e] hover:text-white bg-transparent"
               >
-                Llamar Bilbao: 660 25 25 23
+                Llamar Bilbao: 660 252 523
               </Button>
             </Link>
             <Link href="tel:692728828">

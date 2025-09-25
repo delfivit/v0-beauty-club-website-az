@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Instagram, Phone, MapPin, Clock } from "lucide-react"
 
 export default function Footer() {
@@ -8,7 +9,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo */}
           <div className="md:col-span-1">
-            <div className="text-[#7f0e0e] font-bold text-xl mb-4">The Beauty Club</div>
+            <div className="mb-6">
+              <Image
+                src="/images/logo-footer.png"
+                alt="The Beauty Club"
+                width={200}
+                height={80}
+                className="h-32 w-auto"
+              />
+            </div>
             <Link
               href="https://www.instagram.com/thebeautyclub.tbc/"
               target="_blank"
@@ -21,15 +30,15 @@ export default function Footer() {
 
           {/* Bilbao */}
           <div>
-            <h3 className="text-[#7f0e0e] font-outfit font-semibold text-lg mb-4">Bilbao</h3>
-            <div className="space-y-2 text-[#7f0e0e] text-sm">
+            <h3 className="text-[#7f0e0e] font-outfit font-semibold text-lg mb-4 text-center">Bilbao</h3>
+            <div className="space-y-3 text-[#7f0e0e] text-sm">
               <div className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
                 <span>C/ Máximo Aguirre 11 bis</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span>660 25 25 23</span>
+                <span>660 252 523</span>
               </div>
               <div className="flex items-start">
                 <Clock className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
@@ -44,8 +53,8 @@ export default function Footer() {
 
           {/* Cádiz */}
           <div>
-            <h3 className="text-[#7f0e0e] font-outfit font-semibold text-lg mb-4">Cádiz</h3>
-            <div className="space-y-2 text-[#7f0e0e] text-sm">
+            <h3 className="text-[#7f0e0e] font-outfit font-semibold text-lg mb-4 text-center">Cádiz</h3>
+            <div className="space-y-3 text-[#7f0e0e] text-sm">
               <div className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
                 <span>Avenida Cayetano del Toro 33</span>
@@ -66,8 +75,8 @@ export default function Footer() {
 
           {/* Málaga */}
           <div>
-            <h3 className="text-[#7f0e0e] font-outfit font-semibold text-lg mb-4">Málaga</h3>
-            <div className="space-y-2 text-[#7f0e0e] text-sm">
+            <h3 className="text-[#7f0e0e] font-outfit font-semibold text-lg mb-4 text-center">Málaga</h3>
+            <div className="space-y-3 text-[#7f0e0e] text-sm">
               <div className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
                 <span>Calle Antonio Luis Carrión N9 LOCAL 2</span>
@@ -88,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#d48b71] mt-8 pt-8 text-center text-[#7f0e0e] text-sm">
+        <div className="border-t border-[#d48b71] mt-8 pt-6 text-center text-[#7f0e0e] text-sm">
           <p>&copy; 2025 The Beauty Club. Todos los derechos reservados.</p>
         </div>
       </div>

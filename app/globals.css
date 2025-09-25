@@ -43,6 +43,8 @@
   --font-sans: var(--font-outfit);
   --font-serif: var(--font-butler);
   --font-mono: var(--font-quentin);
+  /* Added Archeron font variable */
+  --font-archeron: "Archeron Pro Stencil";
 
   /* The Beauty Club Brand Colors */
   --color-background: var(--background);
@@ -85,20 +87,24 @@
 
 /* Custom font classes */
 .font-archeron {
-  font-family: "Archeron Pro Stencil", serif;
+  /* Updated to use CSS variable instead of hardcoded font name */
+  font-family: var(--font-archeron), serif;
   font-weight: bold;
 }
 
 .font-butler {
-  font-family: "Butler", serif;
+  /* Updated to use CSS variable */
+  font-family: var(--font-serif), serif;
 }
 
 .font-quentin {
-  font-family: "Quentin", cursive;
+  /* Updated to use CSS variable */
+  font-family: var(--font-mono), cursive;
 }
 
 .font-outfit {
-  font-family: "Outfit", sans-serif;
+  /* Updated to use CSS variable */
+  font-family: var(--font-sans), sans-serif;
 }
 
 /* Custom animations */

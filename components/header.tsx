@@ -11,21 +11,23 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#ffe3dc] shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-2">
+        {/* Increased header height to accommodate larger logo */}
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
+            {/* Increased logo size from 180x60 to 240x80 and adjusted height class */}
             <Image
-              src="/images/logo-header.jpg"
+              src="/images/logo-header.png"
               alt="The Beauty Club"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
+              width={240}
+              height={80}
+              className="h-18 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             <Link
               href="/servicios"
               className="text-[#7f0e0e] font-outfit font-semibold hover:text-[#d48b71] transition-colors"
@@ -47,7 +49,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop Reserva Button */}
-          <Link href="/reserva" className="hidden md:block ml-auto">
+          <Link href="/reserva" className="hidden md:block">
             <Button className="bg-[#7f0e0e] text-[#ffe3dc] font-outfit font-semibold hover:bg-[#d48b71] transition-colors px-6">
               Reserva
             </Button>

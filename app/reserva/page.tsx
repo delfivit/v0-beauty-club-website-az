@@ -12,7 +12,7 @@ export default function BookingPage() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="pt-16">
+      <main>
         <BookingSection />
       </main>
       <Footer />

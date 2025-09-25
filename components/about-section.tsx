@@ -8,32 +8,28 @@ export default function AboutSection() {
     <section className="py-20">
       {/* Hero Section */}
       <div className="bg-[#7f0e0e] py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#faaca2] mb-6 font-serif">Sobre Nosotros</h1>
+        <div className="container mx-auto px-2 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#faaca2] mb-6 font-serif">Sobre nosotros</h1>
           <p className="text-xl text-[#ffe3dc] max-w-3xl mx-auto font-mono">
-            En The Beauty Club no solo hacemos uñas, creamos momentos
+            Tu momento para desconectar
           </p>
         </div>
       </div>
-
       {/* Main Content */}
-      <div className="bg-[#fcf6f5] py-20">
-        <div className="container mx-auto px-4">
+      <div className="bg-[#fcf6f5] py-20 pb-0">
+        <div className="container mx-auto px-2">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
               <div>
-                <h2 className="text-3xl font-bold text-[#7f0e0e] mb-6 font-serif">Nuestra Historia</h2>
                 <div className="space-y-4 text-[#7f0e0e] leading-relaxed">
                   <p>
                     Somos un espacio de belleza donde cada detalle está pensado para que desconectes, te relajes y
-                    salgas sintiéndote más tú. Combinamos técnica impecable, un ambiente cuidado y una experiencia
-                    digital sin fricciones.
+                    salgas sintiéndote más tú.
                   </p>
                   <p>
-                    Tu cita de belleza ahora es un ritual que esperás, no una tarea pendiente. Estamos en Bilbao, Cádiz
-                    y Málaga, pero nuestra esencia es la misma en cada lugar.
+                    Estamos en Bilbao, Cádiz y Málaga, pero nuestra esencia es la misma en cada lugar.
                   </p>
-                  <p>Una comunidad de mujeres (y hombres) que buscan sentirse bien, verse mejor y vivir su momento.</p>
+                  <p>Somos una comunidad que busca sentirse bien y verse mejor.</p>
                 </div>
               </div>
 
@@ -48,7 +44,7 @@ export default function AboutSection() {
                 <Heart className="w-12 h-12 text-[#faaca2] mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-[#7f0e0e] mb-3 font-serif">Cuidado Integral</h3>
                 <p className="text-[#7f0e0e] text-sm">
-                  No vendemos servicios, vendemos sensaciones. Cuidamos más allá del color, enfocándonos en tu bienestar
+                  Cuidamos más allá del color, enfocándonos en tu bienestar
                   completo.
                 </p>
               </div>
@@ -66,8 +62,7 @@ export default function AboutSection() {
                 <Users className="w-12 h-12 text-[#faaca2] mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-[#7f0e0e] mb-3 font-serif">Comunidad</h3>
                 <p className="text-[#7f0e0e] text-sm">
-                  Somos una comunidad que busca sentirse bien, verse mejor y vivir momentos únicos de autocuidado y
-                  relajación.
+                  Somos una comunidad que busca sentirse bien y verse mejor
                 </p>
               </div>
             </div>
@@ -76,14 +71,12 @@ export default function AboutSection() {
             <div className="bg-white p-8 rounded-lg shadow-sm text-center mb-16">
               <h2 className="text-3xl font-bold text-[#7f0e0e] mb-6 font-serif">Nuestra Misión</h2>
               <p className="text-lg text-[#7f0e0e] leading-relaxed max-w-3xl mx-auto">
-                "Tus manos también cuentan tu historia. Tu momento para desconectar empieza en The Beauty Club. No son
-                solo uñas, es cómo te sientes al verlas."
+                "Tu momento para desconectar"
               </p>
             </div>
 
             {/* Locations Overview */}
-            <div className="text-center">
-              <h2 className="text-3xl font-bold text-[#7f0e0e] mb-6 font-serif">Nuestras Ubicaciones</h2>
+            <div className="text-center pb-20">
               <p className="text-[#7f0e0e] mb-8">
                 Encuentra el salón más cercano a ti y vive la experiencia The Beauty Club
               </p>

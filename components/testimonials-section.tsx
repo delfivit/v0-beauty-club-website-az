@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Star } from "lucide-react"
 
 const testimonials = [
@@ -22,31 +22,60 @@ const testimonials = [
     location: "Málaga",
     rating: 5,
   },
+  {
+    text: "Increíble experiencia en The Beauty Club. El trato es excepcional y el resultado de mis uñas superó todas mis expectativas. Sin duda repetiré!",
+    name: "María L",
+    location: "Bilbao",
+    rating: 5,
+  },
+  {
+    text: "Profesionalidad y calidad en cada detalle. Mis uñas nunca habían lucido tan bien y durado tanto tiempo. Totalmente recomendable!",
+    name: "Ana R",
+    location: "Cádiz",
+    rating: 5,
+  },
+  {
+    text: "El ambiente es súper relajante y las chicas son encantadoras. Salgo siempre contentísima con mis uñas. Es mi lugar de confianza!",
+    name: "Laura M",
+    location: "Málaga",
+    rating: 5,
+  },
 ]
 
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length)
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length)
+    }, 4000) // Auto-advance every 4 seconds
 
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+    return () => clearInterval(interval)
+  }, [])
+
+  const getVisibleTestimonials = () => {
+    const visible = []
+    for (let i = 0; i < 3; i++) {
+      const index = (currentIndex + i) % testimonials.length
+      visible.push(testimonials[index])
+    }
+    return visible
   }
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-[#fcf6f5] py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-mono text-[#7f0e0e] mb-8">Nuestras clientas hablan por nosotros</h2>
+          <h2 className="text-4xl md:text-5xl font-butler font-bold text-[#7f0e0e] mb-8">
+            Nuestras clientas hablan por nosotros
+          </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="bg-[#fcf6f5] p-6 rounded-lg shadow-sm">
+              {getVisibleTestimonials().map((testimonial, index) => (
+                <div key={`${currentIndex}-${index}`} className="bg-white p-6 rounded-lg shadow-sm animate-fade-in">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-[#faaca2] text-[#faaca2]" />
