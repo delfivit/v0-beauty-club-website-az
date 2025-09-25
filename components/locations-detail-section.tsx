@@ -18,7 +18,7 @@ const locationsData = [
     services: ["Manicura", "Pedicura", "Lifting de Pestañas", "Depilación"],
     bookingUrl: "/reserva#bilbao",
     bookingScript:
-      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100020&country=es&lang=es"></script>',
+      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100023&country=es&lang=es"></script>',
   },
   {
     id: "cadiz",

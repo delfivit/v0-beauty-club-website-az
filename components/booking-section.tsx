@@ -16,7 +16,7 @@ const bookingData = [
     hours: "Lun-Vie: 9:30-20:30, Sáb: 9:30-14:00",
     bookingMethod: "booksy",
     bookingScript:
-      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100020&country=es&lang=es"></script>',
+      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100023&country=es&lang=es"></script>',
     description: "Reserva online a través de Booksy",
   },
   {

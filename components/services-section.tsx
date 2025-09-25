@@ -7,7 +7,7 @@ const servicesData = {
     name: "Bilbao",
     phone: "660 252 523",
     bookingScript:
-      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100020&country=es&lang=es"></script>',
+      '<script type="text/javascript" src="https://booksy.com/widget/code.js?id=100023&country=es&lang=es"></script>',
     services: [
       { name: "Brow lamination", price: "20€" },
       { name: "Depilación de cejas", price: "10€" },
