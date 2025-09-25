@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,7 +15,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="text-[#7f0e0e] font-bold text-xl">The Beauty Club</div>
+            <Image
+              src="/images/logo-header.jpg"
+              alt="The Beauty Club"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,7 +47,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop Reserva Button */}
-          <Link href="/reserva" className="hidden md:block">
+          <Link href="/reserva" className="hidden md:block ml-auto">
             <Button className="bg-[#7f0e0e] text-[#ffe3dc] font-outfit font-semibold hover:bg-[#d48b71] transition-colors px-6">
               Reserva
             </Button>
